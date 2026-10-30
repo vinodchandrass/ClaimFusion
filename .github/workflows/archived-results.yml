@@ -1,0 +1,21 @@
+name: Archived benchmark integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  archived-summary-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check archived COVID-Fact and SciFact summaries
+        run: python scripts/check_archived_results.py
