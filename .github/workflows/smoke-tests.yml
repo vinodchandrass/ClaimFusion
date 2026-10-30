@@ -1,0 +1,35 @@
+name: Reproducibility smoke tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  stdlib-evaluation:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.12']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile starter source
+        run: python -m py_compile src/evaluate.py tests/test_evaluate.py
+      - name: Execute unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Run deterministic CLI smoke test
+        shell: bash
+        run: |
+          mkdir -p /tmp/claimfusion-check
+          printf 'claim_id,gold,frozen,adapted\na,SUPPORTS,REFUTES,SUPPORTS\nb,REFUTES,REFUTES,REFUTES\nc,SUPPORTS,SUPPORTS,SUPPORTS\n' > /tmp/claimfusion-check/predictions.csv
+          python src/evaluate.py --predictions /tmp/claimfusion-check/predictions.csv --output /tmp/claimfusion-check/metrics.json --resamples 100 --seed 42
+          python -c "import json; x=json.load(open('/tmp/claimfusion-check/metrics.json')); assert x['frozen']['n']==3 and x['adapted']['accuracy']==1.0 and x['status']=='RECOMPUTED_FROM_SUPPLIED_ROWS'"
