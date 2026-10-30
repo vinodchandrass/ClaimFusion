@@ -1,0 +1,96 @@
+{
+  "status": "EXPLORATORY_DEV_ONLY_NOT_CONFIRMATORY",
+  "source_sha256": "ef54b33e0fd0ef9c0420f49016c1efb458d3f8e9076f8b28d4dd4c45caa5e988",
+  "model_directory": "D:\\DataLineage\\S7_NLI_Model",
+  "pair_cache_sha256": "101e802bc8dd8dc21ba8b6e710845b02618aa6a665d8fc7725864f4d08096e60",
+  "unique_pairs": 11047,
+  "eligible_claims": 6616,
+  "methods": {
+    "s33_conjunctive": {
+      "n": 6616,
+      "accuracy": 0.7453143893591294,
+      "macro_f1_2class": 0.8171396069534949,
+      "abstention_rate": 0.19740024183796856,
+      "selective_accuracy": 0.9286252354048964
+    },
+    "max_pair": {
+      "n": 6616,
+      "accuracy": 0.7661729141475212,
+      "macro_f1_2class": 0.8339580690384517,
+      "abstention_rate": 0.17805320435308344,
+      "selective_accuracy": 0.9321441706509747
+    },
+    "mean_pair": {
+      "n": 6616,
+      "accuracy": 0.7187122128174124,
+      "macro_f1_2class": 0.8056883178123198,
+      "abstention_rate": 0.2400241837968561,
+      "selective_accuracy": 0.9457040572792362
+    },
+    "mean_group": {
+      "n": 6616,
+      "accuracy": 0.7226420798065296,
+      "macro_f1_2class": 0.80277496420479,
+      "abstention_rate": 0.22717654171704957,
+      "selective_accuracy": 0.9350674750635635
+    },
+    "max_group_mean": {
+      "n": 6616,
+      "accuracy": 0.7463724304715841,
+      "macro_f1_2class": 0.824635335434629,
+      "abstention_rate": 0.2076783555018138,
+      "selective_accuracy": 0.9420068676077833
+    }
+  },
+  "paired_comparisons": {
+    "max_pair": {
+      "accuracy_delta_vs_s33": 0.020858524788391786,
+      "paired_bootstrap_95ci": [
+        0.01738210399032647,
+        0.024334945586457102
+      ],
+      "discordant_s33_correct_alt_wrong": 1,
+      "discordant_s33_wrong_alt_correct": 139
+    },
+    "mean_pair": {
+      "accuracy_delta_vs_s33": -0.026602176541717037,
+      "paired_bootstrap_95ci": [
+        -0.03113663845223702,
+        -0.022067714631197055
+      ],
+      "discordant_s33_correct_alt_wrong": 213,
+      "discordant_s33_wrong_alt_correct": 37
+    },
+    "mean_group": {
+      "accuracy_delta_vs_s33": -0.0226723095525998,
+      "paired_bootstrap_95ci": [
+        -0.026602176541717037,
+        -0.018893591293833164
+      ],
+      "discordant_s33_correct_alt_wrong": 159,
+      "discordant_s33_wrong_alt_correct": 9
+    },
+    "max_group_mean": {
+      "accuracy_delta_vs_s33": 0.0010580411124546663,
+      "paired_bootstrap_95ci": [
+        -0.001662636033857301,
+        0.0037787182587666335
+      ],
+      "discordant_s33_correct_alt_wrong": 41,
+      "discordant_s33_wrong_alt_correct": 48
+    }
+  },
+  "s33_parity": {
+    "checked": true,
+    "same_claim_ids": true,
+    "mismatch_count": 0
+  },
+  "caveats": [
+    "Oracle gold evidence only; no retrieval evaluation",
+    "No NEI gold claims in input",
+    "Pair aggregation comparators are exploratory and not provenance-aware fusion",
+    "SciFact independent validation requires exposure attestation",
+    "FEVER test not accessed",
+    "Pair cache is generated with frozen local model; verify weights and tokenizer hashes separately"
+  ]
+}

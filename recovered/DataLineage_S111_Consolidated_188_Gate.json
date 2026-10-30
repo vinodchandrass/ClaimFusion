@@ -1,0 +1,95 @@
+{
+  "stage": "S111",
+  "source": "S49_S52_local_audit/s49_policy_predictions.csv",
+  "n_annotated": 188,
+  "n_unannotated_excluded": 112,
+  "scope": "frozen baseline operator comparisons, SciFact development, not adapted model",
+  "overall": [
+    {
+      "group": "ALL",
+      "policy": "top_doc_mean",
+      "n": 188,
+      "correct": 125,
+      "accuracy": 0.6648936170212766,
+      "delta_vs_top_doc": 0.0,
+      "rescues_vs_top_doc": 0,
+      "regressions_vs_top_doc": 0
+    },
+    {
+      "group": "ALL",
+      "policy": "mean_prob",
+      "n": 188,
+      "correct": 101,
+      "accuracy": 0.5372340425531915,
+      "delta_vs_top_doc": -0.1276595744680851,
+      "rescues_vs_top_doc": 10,
+      "regressions_vs_top_doc": 34
+    },
+    {
+      "group": "ALL",
+      "policy": "top_lexical",
+      "n": 188,
+      "correct": 119,
+      "accuracy": 0.6329787234042553,
+      "delta_vs_top_doc": -0.031914893617021274,
+      "rescues_vs_top_doc": 19,
+      "regressions_vs_top_doc": 25
+    },
+    {
+      "group": "ALL",
+      "policy": "max_pair",
+      "n": 188,
+      "correct": 100,
+      "accuracy": 0.5319148936170213,
+      "delta_vs_top_doc": -0.13297872340425532,
+      "rescues_vs_top_doc": 5,
+      "regressions_vs_top_doc": 30
+    },
+    {
+      "group": "ALL",
+      "policy": "weighted_lexical",
+      "n": 188,
+      "correct": 105,
+      "accuracy": 0.5585106382978723,
+      "delta_vs_top_doc": -0.10638297872340426,
+      "rescues_vs_top_doc": 9,
+      "regressions_vs_top_doc": 29
+    }
+  ],
+  "paired": [
+    {
+      "policy": "mean_prob",
+      "rescues": 10,
+      "regressions": 34,
+      "discordant": 44,
+      "mcnemar_exact_two_sided_p": 0.00038813090293388086
+    },
+    {
+      "policy": "top_lexical",
+      "rescues": 19,
+      "regressions": 25,
+      "discordant": 44,
+      "mcnemar_exact_two_sided_p": 0.4513808323961257
+    },
+    {
+      "policy": "max_pair",
+      "rescues": 5,
+      "regressions": 30,
+      "discordant": 35,
+      "mcnemar_exact_two_sided_p": 2.2361520677804947e-05
+    },
+    {
+      "policy": "weighted_lexical",
+      "rescues": 9,
+      "regressions": 29,
+      "discordant": 38,
+      "mcnemar_exact_two_sided_p": 0.0016580525261815637
+    }
+  ],
+  "restrictions": [
+    "Post-hoc development analysis; p-values descriptive, not confirmatory",
+    "No claim that these operators are the HEALTHVER-adapted model",
+    "No new independent evaluation",
+    "Unannotated claims excluded; not treated as NEI"
+  ]
+}

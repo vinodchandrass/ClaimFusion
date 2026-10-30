@@ -1,0 +1,54 @@
+{
+  "evidence_mode_descriptives": {
+    "annotated_sentences": {
+      "pairs": 437,
+      "correct": 295,
+      "accuracy": 0.6750572082379863
+    },
+    "full_abstract_fallback": {
+      "pairs": 23,
+      "correct": 12,
+      "accuracy": 0.5217391304347826
+    }
+  },
+  "status": "PASS_EXPLORATORY_ORACLE_DOCUMENT_INFERENCE_ONLY",
+  "model_id2label": {
+    "0": "contradiction",
+    "1": "entailment",
+    "2": "neutral"
+  },
+  "model_directory": "D:\\DataLineage\\S7_NLI_Model",
+  "input_file_sha256": {
+    "claims.jsonl": "ecd7a1bec2fc1b483f9127f6d0927ff17ebeb08e120088c6e037dfc85ce2b63b",
+    "claims_metadata.jsonl": "8151419a85d7dabe076c0b38d9cf4cb96ad59dec3c3b1be1781b2b75c1d93195",
+    "corpus_candidates.jsonl": "664801e5088c177cd09c01bb410b61e73312bf393f88726f2b9ffb8416f44e0f",
+    "retrievals.jsonl": "2e83af109e69e850e7a0ed9413441f5eba0e550a0a03edcd66aafe2a7eb77e2e"
+  },
+  "s20_archive_sha256": "f0fda4b714c9277ba9fff21b7bea83a73811c2f6847096b052d981b974d5f4f3",
+  "claim_count": 279,
+  "document_pair_count": 460,
+  "document_accuracy": 0.6673913043478261,
+  "provenance_descriptives": {
+    "citation": {
+      "pairs": 209,
+      "correct": 142,
+      "accuracy": 0.6794258373205742
+    },
+    "pooling": {
+      "pairs": 251,
+      "correct": 165,
+      "accuracy": 0.6573705179282868
+    }
+  },
+  "multi_document_claims": 81,
+  "mixed_gold_document_label_claims": 15,
+  "observed_duplicate_doc_id_pairs": 0,
+  "limitations": [
+    "Gold sentence indices used where present; otherwise full abstract fallback; neither is retrieval performance",
+    "No claim-level gold label inferred for mixed-document claims",
+    "No provenance reliability weights or measured document dependence",
+    "Mean and sum log-odds have identical sign for fixed document sets",
+    "This is exploratory: no independently validated fusion improvement",
+    "Researcher exposure attestation still requires completion"
+  ]
+}

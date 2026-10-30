@@ -1,0 +1,9 @@
+model,policy,n,correct,accuracy,supports_correct,supports_n,refutes_correct,refutes_n
+frozen,top_document,188,125,0.6648936170212766,65,124,60,64
+frozen,five_doc_mean,188,101,0.5372340425531915,37,124,64,64
+frozen,rank_discounted,188,100,0.5319148936170213,37,124,63,64
+frozen,majority,188,84,0.44680851063829785,21,124,63,64
+adapted,top_document,188,149,0.7925531914893617,107,124,42,64
+adapted,five_doc_mean,188,139,0.7393617021276596,97,124,42,64
+adapted,rank_discounted,188,139,0.7393617021276596,97,124,42,64
+adapted,majority,188,130,0.6914893617021277,96,124,34,64

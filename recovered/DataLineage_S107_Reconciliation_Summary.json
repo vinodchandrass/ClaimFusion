@@ -1,0 +1,24 @@
+{
+  "catalogue_documents": 1170,
+  "reviewed_unique": 39,
+  "accepted_unique": 31,
+  "rejected_unique": 6,
+  "unresolved_unique": 2,
+  "conflicting_review_unique": 0,
+  "accepted_claims": 47,
+  "accepted_pairs": 76,
+  "claims_with_two_or_more_accepted_docs": 13,
+  "conflict_target_claims_with_accepted_doc": 19,
+  "pending_conflict_pairs": 67,
+  "pending_distinct_docs": 67,
+  "opposing_pending_pairs": 30,
+  "review_files": [
+    "DataLineage_S104_Pilot_20_Record_Audit.csv",
+    "DataLineage_S104_Priority_Batch_External_Check.csv",
+    "DataLineage_S104_Priority_Batch_Three_New_External_Checks.csv",
+    "DataLineage_S104_Claim_Paired_Five_Verified.csv",
+    "DataLineage_S104_Claim_Paired_Next_Five_Verified.csv",
+    "DataLineage_S104_Claim_Paired_Two_New_Verified.csv"
+  ],
+  "verified_sentence_rows": 228
+}

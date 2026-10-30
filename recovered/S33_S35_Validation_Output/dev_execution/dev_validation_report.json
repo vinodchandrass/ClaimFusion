@@ -1,0 +1,68 @@
+{
+  "status": "EXPLORATORY_DEV_ONLY",
+  "model_dir": "D:\\DataLineage\\S7_NLI_Model",
+  "model_label_map": {
+    "0": "contradiction",
+    "1": "entailment",
+    "2": "neutral"
+  },
+  "device": "cpu",
+  "evidence_sha256": "ef54b33e0fd0ef9c0420f49016c1efb458d3f8e9076f8b28d4dd4c45caa5e988",
+  "development_evidence_rows": 14475,
+  "development_claims_with_gold_evidence": 6666,
+  "unique_pairs_available": 11047,
+  "pairs_inferred": 11047,
+  "unresolved_dev_rows": 161,
+  "evaluated_claims": 6616,
+  "coverage_among_evidence_claims": 0.9924992499249925,
+  "important_limits": [
+    "Gold-evidence oracle condition, not retrieval performance",
+    "No NOT ENOUGH INFO claim denominator: NEI rows absent from this CSV",
+    "Threshold 0.5 fixed a priori for exploratory analysis, not tuned",
+    "SciFact independent validation blocked by human-exposure attestation",
+    "FEVER test split not read into evaluation"
+  ],
+  "metrics_conditional_on_complete_gold_groups": {
+    "accuracy": 0.7453143893591294,
+    "macro_f1": 0.5447597379689966,
+    "per_class": {
+      "SUPPORTS": {
+        "precision": 0.9588089330024814,
+        "recall": 0.5843920145190563,
+        "f1": 0.7261792896072167,
+        "support": 3306
+      },
+      "REFUTES": {
+        "precision": 0.9101669195751139,
+        "recall": 0.9060422960725075,
+        "f1": 0.9080999242997729,
+        "support": 3310
+      },
+      "NOT ENOUGH INFO": {
+        "precision": 0.0,
+        "recall": 0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion": {
+      "SUPPORTS": {
+        "SUPPORTS": 1932,
+        "REFUTES": 296,
+        "NOT ENOUGH INFO": 1078
+      },
+      "REFUTES": {
+        "SUPPORTS": 83,
+        "REFUTES": 2999,
+        "NOT ENOUGH INFO": 228
+      },
+      "NOT ENOUGH INFO": {
+        "SUPPORTS": 0,
+        "REFUTES": 0,
+        "NOT ENOUGH INFO": 0
+      }
+    }
+  },
+  "s34_ablation_status": "NOT_RUN_REQUIRES_VALIDATED_COMPARATORS",
+  "s35_confirmatory_status": "NOT_RUN_INDEPENDENCE_AND_DENOMINATOR_GATES"
+}

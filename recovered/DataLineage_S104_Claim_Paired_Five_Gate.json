@@ -1,0 +1,25 @@
+{
+  "new_bibliographic_identities": 5,
+  "newly_multi_identity_claims": 9,
+  "newly_accepted_claim_document_pairs": 15,
+  "newly_linked_sentence_rows_expected": 45,
+  "claims_with_3_new_identities": 0,
+  "claim_ids": [
+    128,
+    830,
+    831,
+    1020,
+    1021,
+    1187,
+    1352,
+    1362,
+    1363
+  ],
+  "previous_bibliographic_identities": 19,
+  "updated_bibliographic_identities": 24,
+  "previous_claims_with_any_identity": 42,
+  "updated_claims_with_any_identity": 42,
+  "updated_claims_with_at_least_two_identities": 9,
+  "publication_version_and_source_independence": "UNVERIFIED",
+  "model_evaluation": "NOT_RUN"
+}

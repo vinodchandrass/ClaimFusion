@@ -1,0 +1,56 @@
+{
+  "timestamp_utc": "2026-10-19T08:15:50.676981+00:00",
+  "stage": "S33-S35",
+  "inputs": {
+    "D:\\DataLineage\\S7_NLI_Model\\config.json": {
+      "exists": true,
+      "bytes": 1052,
+      "sha256": "897e756eb59d3183adb505952e7910e7cbc7750a43f3b3747a96b688d2b02a47"
+    },
+    "D:\\DataLineage\\S7_NLI_Model\\tokenizer.json": {
+      "exists": true,
+      "bytes": 8656624,
+      "sha256": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964"
+    },
+    "D:\\DataLineage\\S7_NLI_Model\\model.safetensors": {
+      "exists": true,
+      "bytes": 737726552,
+      "sha256": "d8148c6d49e0a7925134294c56326c71fe0ab1dc390e37355e00c7efbb488afa"
+    },
+    "D:\\DataLineage\\S32_FEVER_Resolved\\S32_resolved_evidence.csv": {
+      "exists": true,
+      "bytes": 7131208,
+      "sha256": "ef54b33e0fd0ef9c0420f49016c1efb458d3f8e9076f8b28d4dd4c45caa5e988"
+    }
+  },
+  "gates": {
+    "required_inputs": "PASS",
+    "nli_label_mapping": "PASS",
+    "independent_scifact_confirmation": "BLOCKED_HUMAN_EXPOSURE_ATTESTATION_REQUIRED",
+    "fever_model_inference": "NOT_RUN",
+    "fusion_ablations": "NOT_RUN",
+    "paired_statistics": "NOT_RUN"
+  },
+  "limitations": [
+    "Inventory-only handoff contains no model weights or resolved evidence rows. Local files must be checked before inference.",
+    "SciFact prior test exposure prevents treating historical results as untouched confirmatory evidence.",
+    "No model accuracy, calibration, ablation, or statistical superiority is asserted by this audit."
+  ],
+  "model_labels": {
+    "0": "contradiction",
+    "1": "entailment",
+    "2": "neutral"
+  },
+  "evidence_columns": [
+    "split",
+    "claim_id",
+    "claim",
+    "gold_label",
+    "group_index",
+    "page_id",
+    "sentence_index",
+    "resolved",
+    "evidence_text"
+  ],
+  "evidence_row_count": 28625
+}

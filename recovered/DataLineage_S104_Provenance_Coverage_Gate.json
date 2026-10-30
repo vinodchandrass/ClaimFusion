@@ -1,0 +1,15 @@
+{
+  "retrieval_rows": 1500,
+  "claims": 300,
+  "distinct_docs": 1170,
+  "candidate_doi_rows": 1500,
+  "accepted_pilot_docs": 13,
+  "rejected_pilot_docs": 6,
+  "unresolved_pilot_docs": 1,
+  "accepted_pilot_retrieval_rows": 17,
+  "rejected_pilot_retrieval_rows": 6,
+  "unresolved_pilot_retrieval_rows": 1,
+  "claims_with_accepted_pilot_retrieval": 17,
+  "claims_with_two_or_more_accepted_pilot_retrieval_docs": 0,
+  "accepted_pilot_doi_unique": 13
+}

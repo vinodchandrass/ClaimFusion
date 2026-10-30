@@ -1,0 +1,32 @@
+{
+  "status": "DESCRIPTIVE_SOURCE_STRUCTURE_AUDIT_NOT_PROVENANCE_VALIDATION",
+  "source_sha256": "ef54b33e0fd0ef9c0420f49016c1efb458d3f8e9076f8b28d4dd4c45caa5e988",
+  "pair_cache_sha256": "101e802bc8dd8dc21ba8b6e710845b02618aa6a665d8fc7725864f4d08096e60",
+  "development_rows": 14475,
+  "cached_unique_pairs": 11047,
+  "claims_with_resolved_evidence": 6616,
+  "claims_with_multiple_pages": 872,
+  "claims_with_duplicate_evidence_rows": 1000,
+  "claims_with_duplicate_group_signatures": 929,
+  "claims_with_unresolved_rows": 25,
+  "distinct_pages_in_development": 1447,
+  "repeated_pages_across_claims": 895,
+  "available_attributes": [
+    "page_id",
+    "sentence_index",
+    "group_index",
+    "resolved",
+    "evidence_text",
+    "NLI probabilities"
+  ],
+  "not_established": [
+    "source reliability",
+    "independent document authorship",
+    "document publication time",
+    "retrieval provenance",
+    "source independence",
+    "NEI gold performance",
+    "independent SciFact transfer"
+  ],
+  "decision": "DO_NOT_LABEL_PAGE_DIVERSITY_AS_INDEPENDENT_PROVENANCE"
+}

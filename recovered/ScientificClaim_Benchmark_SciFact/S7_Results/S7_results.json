@@ -1,0 +1,95 @@
+{
+  "protocol": "S7 zero-shot semantic NLI, gold evidence only; NOT provenance fusion",
+  "model_lock": {
+    "model_id": "cross-encoder/nli-deberta-v3-base",
+    "resolved_commit": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+    "max_length": 384,
+    "input_direction": "premise=evidence sentence, hypothesis=claim",
+    "aggregation": "mean of sentence softmax probabilities; binary argmax between contradiction and entailment; neutral margin reported separately",
+    "zero_shot": true,
+    "dataset_sha256": {
+      "claims_train.jsonl": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+      "claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+      "corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62"
+    },
+    "seed": 2026
+  },
+  "train_text_duplicate_exclusions_for_future_training": [
+    "1291",
+    "871"
+  ],
+  "gold_pairs": 209,
+  "claims": 188,
+  "sentence_inferences": 366,
+  "model_metrics": {
+    "n": 209,
+    "macro_f1": 0.8076914002595257,
+    "accuracy": 0.8133971291866029,
+    "confusion_matrix": [
+      [
+        67,
+        4
+      ],
+      [
+        35,
+        103
+      ]
+    ],
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.6568627450980392,
+        "recall": 0.9436619718309859,
+        "f1": 0.7745664739884393
+      },
+      "SUPPORT": {
+        "precision": 0.9626168224299065,
+        "recall": 0.7463768115942029,
+        "f1": 0.8408163265306122
+      }
+    }
+  },
+  "majority_metrics": {
+    "n": 209,
+    "macro_f1": 0.3976945244956772,
+    "accuracy": 0.6602870813397129,
+    "confusion_matrix": [
+      [
+        0,
+        71
+      ],
+      [
+        0,
+        138
+      ]
+    ],
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "SUPPORT": {
+        "precision": 0.6602870813397129,
+        "recall": 1.0,
+        "f1": 0.7953890489913544
+      }
+    }
+  },
+  "paired_claim_bootstrap": {
+    "resamples": 10000,
+    "delta_macro_f1": 0.40999687576384847,
+    "ci_95": [
+      0.3378244894253558,
+      0.4782430517771419
+    ]
+  },
+  "limitations": [
+    "No document retrieval",
+    "No SciFact test gold labels",
+    "Neutral output not treated as annotated NEI",
+    "Gold evidence supplied to both models",
+    "Not a provenance-aware fusion method",
+    "No training or dev tuning",
+    "No independent reliability ground truth"
+  ]
+}

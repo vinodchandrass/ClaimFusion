@@ -1,0 +1,31 @@
+{
+  "primary_unit": "claim-document pair with gold SUPPORT/CONTRADICT evidence; sentence groups retained",
+  "primary_split": "official train/dev with exact-text overlap exclusions on training",
+  "secondary": "five-fold CV with per-fold exact-text training exclusions",
+  "candidate_scope": "gold evidence groups and cited-but-unannotated UNKNOWN pairs; unknowns excluded from supervised accuracy",
+  "metrics": [
+    "macro-F1",
+    "per-class precision and recall",
+    "confusion matrix",
+    "claim-group bootstrap 95% confidence intervals"
+  ],
+  "comparisons": [
+    "majority class",
+    "TF-IDF + linear classifier using claim and evidence sentence text",
+    "frozen pretrained NLI baseline (model and weights must be declared before use)",
+    "proposed fusion method with component ablations"
+  ],
+  "frozen_decisions_pending": [
+    "source/model selection and exact weights",
+    "train-only threshold selection and hyperparameters",
+    "gold candidate availability at inference versus retrieval-based evaluation",
+    "handling of multiple contradictory evidence groups",
+    "claim-level aggregation and document-level evaluation",
+    "statistical test and seed budget"
+  ],
+  "no_claims": [
+    "Do not claim independent test accuracy",
+    "Do not treat UNKNOWN as NOT_ENOUGH_INFO",
+    "Do not claim novelty or superiority without experiments"
+  ]
+}

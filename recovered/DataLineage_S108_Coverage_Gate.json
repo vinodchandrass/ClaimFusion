@@ -1,0 +1,22 @@
+{
+  "new_bibliographic_accepts": 4,
+  "previous_accepted_identities": 31,
+  "accepted_identities_after": 35,
+  "claims_with_at_least_one_after": 48,
+  "claims_with_two_or_more_before": 13,
+  "claims_with_two_or_more_after": 16,
+  "accepted_claim_document_pairs_after": 81,
+  "sentence_rows_linked_after": 243,
+  "newly_multidocument_claim_ids": [
+    179,
+    261,
+    660
+  ],
+  "review_queue_remaining_rows": 63,
+  "caveats": [
+    "DOI-title publication identity verified via PubMed",
+    "Corpus abstract/version correspondence unverified",
+    "Source independence unverified",
+    "No new model predictions or labelled evaluation"
+  ]
+}

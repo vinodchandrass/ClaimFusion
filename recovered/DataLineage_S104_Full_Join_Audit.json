@@ -1,0 +1,24 @@
+{
+  "retrieval_rows": 1500,
+  "sentence_rows": 4500,
+  "claims": 300,
+  "distinct_docs": 1170,
+  "candidate_doi_retrieval_rows": 1500,
+  "candidate_doi_sentence_rows": 4500,
+  "verified_retrieval_rows": 17,
+  "verified_sentence_rows": 51,
+  "claims_with_verified_doc": 17,
+  "claims_with_two_verified_docs": 0,
+  "exact_title_retrieval_rows": 1088,
+  "exact_title_sentence_rows": 3264,
+  "claims_with_two_exact_title_candidates": 294,
+  "claims_with_repeated_candidate_doi": 0,
+  "claims_with_2_verified_independent_dois": 0,
+  "pilot_decisions": {
+    "ACCEPT": 13,
+    "REJECT": 6,
+    "UNRESOLVED": 1
+  },
+  "verified_pilot_unique_docs": 13,
+  "candidate_only_notice": "Exact title matching is unverified; DOI uniqueness does not establish independent evidence."
+}

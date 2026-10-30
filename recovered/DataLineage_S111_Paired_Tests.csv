@@ -1,0 +1,5 @@
+policy,rescues,regressions,discordant,mcnemar_exact_two_sided_p
+mean_prob,10,34,44,0.00038813090293388086
+top_lexical,19,25,44,0.4513808323961257
+max_pair,5,30,35,2.2361520677804947e-05
+weighted_lexical,9,29,38,0.0016580525261815637

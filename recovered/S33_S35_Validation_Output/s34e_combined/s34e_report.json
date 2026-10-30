@@ -1,0 +1,189 @@
+{
+  "status": "EXPLORATORY_DEV_ONLY_SOURCE_IDENTITY_NOT_VALIDATED_PROVENANCE",
+  "n": 6616,
+  "input_sha256": {
+    "source": "ef54b33e0fd0ef9c0420f49016c1efb458d3f8e9076f8b28d4dd4c45caa5e988",
+    "pair_cache": "101e802bc8dd8dc21ba8b6e710845b02618aa6a665d8fc7725864f4d08096e60",
+    "s34c_predictions": "14fcba3a14c09f35c774698dae04a7b37d9aab78a4abd85e713f317ff78f39d9",
+    "s34d_diagnostics": "b68d39c1cd40ad055ae3f006652e3326ae8d029b5a70c2b5f43ffbed86862154"
+  },
+  "frozen_threshold": 0.5,
+  "baseline_parity": "PASS",
+  "duplicate_invariance": "PASS",
+  "claims_with_duplicate_rows": 1000,
+  "methods": {
+    "baseline": {
+      "n": 6616,
+      "accuracy": 0.7661729141475212,
+      "abstention": 0.17805320435308344,
+      "selective_accuracy": 0.9321441706509747,
+      "supports_accuracy": 0.6264367816091954,
+      "refutes_accuracy": 0.9057401812688822
+    },
+    "conflict_guard": {
+      "n": 6616,
+      "accuracy": 0.7546856106408706,
+      "abstention": 0.19800483675937122,
+      "selective_accuracy": 0.9410101771579344,
+      "supports_accuracy": 0.6070780399274047,
+      "refutes_accuracy": 0.9021148036253777
+    }
+  },
+  "conflict": {
+    "flagged": 132,
+    "changed": 132,
+    "baseline_correct_guard_wrong": 76,
+    "baseline_wrong_guard_correct": 0
+  },
+  "paired_accuracy_delta_guard_minus_baseline": {
+    "point": -0.011487303506650543,
+    "bootstrap_95ci": [
+      -0.01435912938331318,
+      -0.008917775090689238
+    ],
+    "replicates": 3000
+  },
+  "strata": {
+    "single_page": {
+      "baseline": {
+        "n": 5744,
+        "accuracy": 0.7719359331476323,
+        "abstention": 0.18210306406685237,
+        "selective_accuracy": 0.9438058748403576,
+        "supports_accuracy": 0.6374911410347271,
+        "refutes_accuracy": 0.9017796030116358
+      },
+      "guard": {
+        "n": 5744,
+        "accuracy": 0.7663649025069638,
+        "abstention": 0.1894150417827298,
+        "selective_accuracy": 0.945446735395189,
+        "supports_accuracy": 0.628632175761871,
+        "refutes_accuracy": 0.8993839835728953
+      },
+      "conflict_count": 42
+    },
+    "multi_page": {
+      "baseline": {
+        "n": 872,
+        "accuracy": 0.7282110091743119,
+        "abstention": 0.15137614678899083,
+        "selective_accuracy": 0.8581081081081081,
+        "supports_accuracy": 0.5619834710743802,
+        "refutes_accuracy": 0.9355670103092784
+      },
+      "guard": {
+        "n": 872,
+        "accuracy": 0.6777522935779816,
+        "abstention": 0.2545871559633027,
+        "selective_accuracy": 0.9092307692307692,
+        "supports_accuracy": 0.48140495867768596,
+        "refutes_accuracy": 0.9226804123711341
+      },
+      "conflict_count": 90
+    },
+    "duplicate_rows": {
+      "baseline": {
+        "n": 1000,
+        "accuracy": 0.788,
+        "abstention": 0.156,
+        "selective_accuracy": 0.933649289099526,
+        "supports_accuracy": 0.6416184971098265,
+        "refutes_accuracy": 0.9459459459459459
+      },
+      "guard": {
+        "n": 1000,
+        "accuracy": 0.765,
+        "abstention": 0.197,
+        "selective_accuracy": 0.9526774595267746,
+        "supports_accuracy": 0.6088631984585742,
+        "refutes_accuracy": 0.9334719334719335
+      },
+      "conflict_count": 41
+    },
+    "no_duplicate_rows": {
+      "baseline": {
+        "n": 5616,
+        "accuracy": 0.7622863247863247,
+        "abstention": 0.18198005698005698,
+        "selective_accuracy": 0.9318676534610362,
+        "supports_accuracy": 0.6236096160746322,
+        "refutes_accuracy": 0.8989042064333687
+      },
+      "guard": {
+        "n": 5616,
+        "accuracy": 0.7528490028490028,
+        "abstention": 0.19818376068376067,
+        "selective_accuracy": 0.9389296024872308,
+        "supports_accuracy": 0.6067456045927521,
+        "refutes_accuracy": 0.8967833156592435
+      },
+      "conflict_count": 91
+    },
+    "page_share_100pct": {
+      "baseline": {
+        "n": 5744,
+        "accuracy": 0.7719359331476323,
+        "abstention": 0.18210306406685237,
+        "selective_accuracy": 0.9438058748403576,
+        "supports_accuracy": 0.6374911410347271,
+        "refutes_accuracy": 0.9017796030116358
+      },
+      "guard": {
+        "n": 5744,
+        "accuracy": 0.7663649025069638,
+        "abstention": 0.1894150417827298,
+        "selective_accuracy": 0.945446735395189,
+        "supports_accuracy": 0.628632175761871,
+        "refutes_accuracy": 0.8993839835728953
+      },
+      "conflict_count": 42
+    },
+    "page_share_below_100pct": {
+      "baseline": {
+        "n": 872,
+        "accuracy": 0.7282110091743119,
+        "abstention": 0.15137614678899083,
+        "selective_accuracy": 0.8581081081081081,
+        "supports_accuracy": 0.5619834710743802,
+        "refutes_accuracy": 0.9355670103092784
+      },
+      "guard": {
+        "n": 872,
+        "accuracy": 0.6777522935779816,
+        "abstention": 0.2545871559633027,
+        "selective_accuracy": 0.9092307692307692,
+        "supports_accuracy": 0.48140495867768596,
+        "refutes_accuracy": 0.9226804123711341
+      },
+      "conflict_count": 90
+    },
+    "unresolved_present": {
+      "baseline": {
+        "n": 25,
+        "accuracy": 0.48,
+        "abstention": 0.48,
+        "selective_accuracy": 0.9230769230769231,
+        "supports_accuracy": 0.25,
+        "refutes_accuracy": 0.8888888888888888
+      },
+      "guard": {
+        "n": 25,
+        "accuracy": 0.48,
+        "abstention": 0.48,
+        "selective_accuracy": 0.9230769230769231,
+        "supports_accuracy": 0.25,
+        "refutes_accuracy": 0.8888888888888888
+      },
+      "conflict_count": 0
+    }
+  },
+  "limitations": [
+    "Gold FEVER oracle evidence; no retrieval, no gold NEI evaluation",
+    "Page identity is not independently verified source provenance",
+    "Conflict gate is an illustrative fixed-threshold sensitivity analysis, not a validated algorithm",
+    "Accuracy is on all claims; selective accuracy conditions on nonabstentions",
+    "Bootstrap is exploratory and does not correct for multiple comparisons",
+    "No SciFact independent confirmation or sealed FEVER test evaluation"
+  ]
+}

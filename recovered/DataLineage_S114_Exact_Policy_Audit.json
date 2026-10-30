@@ -1,0 +1,60 @@
+{
+  "source_file": "adapted_scifact_candidates_DEV_ONLY.csv",
+  "source_sha256": "1c504188ef1f4d95eae55175d6c9168294aad8c2d7e7089e466a3a39050f76f6",
+  "method": "Reimplemented exact run.py decision formula: per-doc mean(p_entailment-p_contradiction); rank weight 1/log2(doc_rank+2); binary SUPPORTS if score > 0, else REFUTES.",
+  "n_claims": 300,
+  "n_annotated": 188,
+  "results": {
+    "top_document": {
+      "correct": 149,
+      "accuracy": 0.7925531914893617,
+      "macro_f1": 0.7643883158199172
+    },
+    "five_doc_mean": {
+      "correct": 139,
+      "accuracy": 0.7393617021276596,
+      "macro_f1": 0.7149664284167208,
+      "rescued": 9,
+      "regressed": 19,
+      "difference_pp": -5.319148936170213,
+      "paired_bootstrap_ci_pp": [
+        -10.638297872340425,
+        0.0
+      ],
+      "exact_mcnemar_p": 0.08715855330228806
+    },
+    "rank_discounted": {
+      "correct": 139,
+      "accuracy": 0.7393617021276596,
+      "macro_f1": 0.7149664284167208,
+      "rescued": 9,
+      "regressed": 19,
+      "difference_pp": -5.319148936170213,
+      "paired_bootstrap_ci_pp": [
+        -10.638297872340425,
+        0.0
+      ],
+      "exact_mcnemar_p": 0.08715855330228806
+    },
+    "majority": {
+      "correct": 130,
+      "accuracy": 0.6914893617021277,
+      "macro_f1": 0.6538412698412699,
+      "rescued": 13,
+      "regressed": 32,
+      "difference_pp": -10.106382978723403,
+      "paired_bootstrap_ci_pp": [
+        -17.02127659574468,
+        -3.1914893617021276
+      ],
+      "exact_mcnemar_p": 0.006608822842281368
+    }
+  },
+  "matches_original_report": {
+    "top_document": true,
+    "five_doc_mean": true,
+    "rank_discounted": true,
+    "majority": true
+  },
+  "status": "DEVELOPMENT_ONLY_NO_INDEPENDENT_VALIDATION"
+}

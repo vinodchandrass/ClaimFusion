@@ -1,0 +1,20 @@
+{
+  "phase": "S67",
+  "generated_utc": "2026-10-20T07:00:57.541736+00:00",
+  "repository_url": "https://github.com/sarrouti/HealthVer.git",
+  "repository_path": "D:\\DataLineage\\S67_HealthVer_Acquisition\\HealthVer_official",
+  "download_status": "CLONED",
+  "commit": "b20ac99ceed62f5264a319fa25a854df1668d85b",
+  "data_files": 3,
+  "no_test_labels_read": true,
+  "no_model_inference": true,
+  "independent_evaluation_authorized": false,
+  "limitations": [
+    "Dataset provenance and local inventory do not establish independence",
+    "Public data can have prior training exposure",
+    "No external holdout scoring permitted"
+  ],
+  "clone_error": null,
+  "files_in_inventory": 28,
+  "status": "SNAPSHOT_INVENTORIED_NOT_ELIGIBILITY_CLEARED"
+}

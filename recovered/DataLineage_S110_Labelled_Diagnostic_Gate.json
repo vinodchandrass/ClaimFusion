@@ -1,0 +1,25 @@
+{
+  "stage": "S110",
+  "scope": "post-hoc selected bibliographically accepted 2+ document subset",
+  "n_total": 16,
+  "n_annotated": 6,
+  "n_unannotated": 10,
+  "annotated_gold_counts": {
+    "SUPPORTS": 5,
+    "REFUTES": 1
+  },
+  "top_retrieved_correct": 1,
+  "accepted_mean_correct": 1,
+  "top_accepted_correct": 1,
+  "paired_decision_changes_on_annotated": 0,
+  "changed_unannotated_claims": [
+    660
+  ],
+  "restrictions": [
+    "Development data only; post-hoc subset selection",
+    "No NEI labels assigned to unannotated claims",
+    "No inference of independent generalization or causal provenance effect",
+    "Corpus versions and source independence unverified",
+    "Very small labelled sample; no inferential significance claim"
+  ]
+}

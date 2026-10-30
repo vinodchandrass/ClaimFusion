@@ -1,0 +1,252 @@
+{
+  "stage": "S3/S4 baseline execution, not a new claim-validity fusion model",
+  "status": "BASELINES_COMPLETED_PROPOSED_METHOD_NOT_YET_DEFINED",
+  "source_hashes_checked": true,
+  "training_claim_ids_allowed": 807,
+  "train_labelled_pairs": 564,
+  "dev_labelled_pairs": 209,
+  "train_unique_claims": 505,
+  "dev_unique_claims": 188,
+  "train_labels": {
+    "CONTRADICT": 194,
+    "SUPPORT": 370
+  },
+  "dev_labels": {
+    "SUPPORT": 138,
+    "CONTRADICT": 71
+  },
+  "excluded_train": {},
+  "excluded_dev": {},
+  "models": {
+    "majority": {
+      "macro_f1": 0.3976945244956772,
+      "accuracy": 0.6602870813397129,
+      "confusion_matrix": [
+        [
+          0,
+          71
+        ],
+        [
+          0,
+          138
+        ]
+      ],
+      "per_class": {
+        "CONTRADICT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 71.0
+        },
+        "SUPPORT": {
+          "precision": 0.6602870813397129,
+          "recall": 1.0,
+          "f1-score": 0.7953890489913544,
+          "support": 138.0
+        },
+        "accuracy": 0.6602870813397129,
+        "macro avg": {
+          "precision": 0.33014354066985646,
+          "recall": 0.5,
+          "f1-score": 0.3976945244956772,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.4359790297841167,
+          "recall": 0.6602870813397129,
+          "f1-score": 0.5251851136880714,
+          "support": 209.0
+        }
+      },
+      "claim_cluster_bootstrap_95ci": [
+        0.36827174263371276,
+        0.42349726775956287
+      ]
+    },
+    "tfidf_claim": {
+      "macro_f1": 0.3976945244956772,
+      "accuracy": 0.6602870813397129,
+      "confusion_matrix": [
+        [
+          0,
+          71
+        ],
+        [
+          0,
+          138
+        ]
+      ],
+      "per_class": {
+        "CONTRADICT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 71.0
+        },
+        "SUPPORT": {
+          "precision": 0.6602870813397129,
+          "recall": 1.0,
+          "f1-score": 0.7953890489913544,
+          "support": 138.0
+        },
+        "accuracy": 0.6602870813397129,
+        "macro avg": {
+          "precision": 0.33014354066985646,
+          "recall": 0.5,
+          "f1-score": 0.3976945244956772,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.4359790297841167,
+          "recall": 0.6602870813397129,
+          "f1-score": 0.5251851136880714,
+          "support": 209.0
+        }
+      },
+      "claim_cluster_bootstrap_95ci": [
+        0.36827174263371276,
+        0.42349726775956287
+      ]
+    },
+    "tfidf_evidence": {
+      "macro_f1": 0.3790171100713774,
+      "accuracy": 0.583732057416268,
+      "confusion_matrix": [
+        [
+          1,
+          70
+        ],
+        [
+          17,
+          121
+        ]
+      ],
+      "per_class": {
+        "CONTRADICT": {
+          "precision": 0.05555555555555555,
+          "recall": 0.014084507042253521,
+          "f1-score": 0.02247191011235955,
+          "support": 71.0
+        },
+        "SUPPORT": {
+          "precision": 0.6335078534031413,
+          "recall": 0.8768115942028986,
+          "f1-score": 0.7355623100303952,
+          "support": 138.0
+        },
+        "accuracy": 0.583732057416268,
+        "macro avg": {
+          "precision": 0.34453170447934844,
+          "recall": 0.44544805062257603,
+          "f1-score": 0.3790171100713774,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.43716999145491836,
+          "recall": 0.583732057416268,
+          "f1-score": 0.493316289005608,
+          "support": 209.0
+        }
+      },
+      "claim_cluster_bootstrap_95ci": [
+        0.3394493747965727,
+        0.4217879998295121
+      ]
+    },
+    "tfidf_pair": {
+      "macro_f1": 0.3976945244956772,
+      "accuracy": 0.6602870813397129,
+      "confusion_matrix": [
+        [
+          0,
+          71
+        ],
+        [
+          0,
+          138
+        ]
+      ],
+      "per_class": {
+        "CONTRADICT": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 71.0
+        },
+        "SUPPORT": {
+          "precision": 0.6602870813397129,
+          "recall": 1.0,
+          "f1-score": 0.7953890489913544,
+          "support": 138.0
+        },
+        "accuracy": 0.6602870813397129,
+        "macro avg": {
+          "precision": 0.33014354066985646,
+          "recall": 0.5,
+          "f1-score": 0.3976945244956772,
+          "support": 209.0
+        },
+        "weighted avg": {
+          "precision": 0.4359790297841167,
+          "recall": 0.6602870813397129,
+          "f1-score": 0.5251851136880714,
+          "support": 209.0
+        }
+      },
+      "claim_cluster_bootstrap_95ci": [
+        0.36827174263371276,
+        0.42349726775956287
+      ]
+    }
+  },
+  "inner_group_cv_tuning": {
+    "claim": {
+      "selected_C": 0.1,
+      "cv_macro_f1": [
+        0.39572713263215326,
+        0.38936392917053836,
+        0.38912101630466805
+      ]
+    },
+    "evidence": {
+      "selected_C": 1.0,
+      "cv_macro_f1": [
+        0.39572713263215326,
+        0.3971386035358462,
+        0.36345838974579614
+      ]
+    },
+    "pair": {
+      "selected_C": 0.1,
+      "cv_macro_f1": [
+        0.39572713263215326,
+        0.39352206106393833,
+        0.36027153379893706
+      ]
+    }
+  },
+  "paired_comparison": {
+    "pair_minus_evidence_macro_f1": 0.01867741442429982,
+    "paired_claim_cluster_bootstrap_95ci": [
+      -0.01772842970710532,
+      0.049324408920737854
+    ],
+    "bootstrap_samples": 10000,
+    "claim_clusters": 188
+  },
+  "limitations": [
+    "Gold-evidence oracle setting: evidence sentences were selected from annotations, unavailable in realistic retrieval",
+    "Test set not evaluated",
+    "No pretrained neural baseline",
+    "No novel fusion model was defined or evaluated",
+    "Repeated document or shared corpus effects not removed by claim-cluster bootstrap",
+    "Do not interpret bootstrap confidence intervals as proof of generalization"
+  ],
+  "seed": 1103,
+  "other_prespecified_seeds_reserved_for_future_robustness": [
+    2207,
+    3301,
+    4409,
+    5501
+  ]
+}

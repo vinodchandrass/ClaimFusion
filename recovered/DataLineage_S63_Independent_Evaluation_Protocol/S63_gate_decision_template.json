@@ -1,0 +1,20 @@
+{
+  "phase": "S63",
+  "status": "PROTOCOL_DESIGN_ONLY_EXTERNAL_EVALUATION_BLOCKED",
+  "created_date": "2026-10-20",
+  "historical_s54_dev_correct": 125,
+  "historical_s54_dev_annotated": 188,
+  "historical_s59_s62_artifacts_verified": 11,
+  "gates": {
+    "G0_independent_artifact_verification": "PENDING",
+    "G1_independent_dataset_legitimacy": "PENDING",
+    "G2_leakage_and_exposure_clearance": "PENDING",
+    "G3_independent_custody_attestation": "PENDING",
+    "G4_prospective_protocol_freeze": "PENDING",
+    "G5_execution_authorization": "BLOCKED",
+    "G6_audit_release": "NOT_APPLICABLE"
+  },
+  "sealed_test_read": false,
+  "independent_evaluation_performed": false,
+  "authorized_to_execute": false
+}

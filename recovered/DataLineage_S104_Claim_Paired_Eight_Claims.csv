@@ -1,0 +1,10 @@
+claim_id,accepted_doc_ids,accepted_count,pending_exact_title_doc_ids,pending_exact_title_count,other_pending_count,excluded_count,paired_ready_now,paired_ready_if_one_exact_verified,newly_verified_doc_ids,new_bibliographic_identity_count,updated_bibliographic_identity_count,multi_identity_bibliographic_ready,source_independence_verified
+128,1122279,1,23513718;8290953;2665425;12631182,4,0,0,False,True,8290953;23513718,2,3,True,False
+830,12737132,1,52873726;735130;4447785;1897324,4,0,0,False,True,52873726,1,2,True,False
+831,12737132,1,52873726;4324278;735130,3,1,0,False,True,52873726,1,2,True,False
+1020,10559501,1,9433958;12885341;34287602,3,1,0,False,True,12885341;34287602,2,3,True,False
+1021,10559501,1,9433958;12885341;34287602,3,1,0,False,True,12885341;34287602,2,3,True,False
+1187,12737132,1,52873726;3893473;19099739;40667066,4,0,0,False,True,52873726,1,2,True,False
+1352,10559501,1,12885341;34287602;11016410,3,1,0,False,True,12885341;34287602,2,3,True,False
+1362,1122279,1,23513718;8290953;2665425;12631182,4,0,0,False,True,8290953;23513718,2,3,True,False
+1363,1122279,1,8290953;23513718;6417632,3,1,0,False,True,8290953;23513718,2,3,True,False

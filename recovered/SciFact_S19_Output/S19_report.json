@@ -1,0 +1,33 @@
+{
+  "status": "PASS_DESCRIPTIVE_AUDIT",
+  "claims": 279,
+  "evidence_pairs": 460,
+  "conflict_claims": 15,
+  "provenance": {
+    "citation": 209,
+    "pooling": 251
+  },
+  "provenance_label_counts": {
+    "('citation', 'CONTRADICT')": 102,
+    "('pooling', 'CONTRADICT')": 109,
+    "('citation', 'SUPPORT')": 107,
+    "('pooling', 'SUPPORT')": 142
+  },
+  "conflict_provenance_mixes": {
+    "citation+pooling": 15
+  },
+  "original_scifact_files_present": [
+    "claims_train.jsonl",
+    "claims_dev.jsonl",
+    "claims_test.jsonl"
+  ],
+  "exact_text_overlap_count": 279,
+  "exact_id_overlap_count": 279,
+  "integrity_issues": 0,
+  "limitations": [
+    "Source provenance is evidence acquisition method, not source reliability",
+    "Conflicting labels are document-level annotations, not independently verified scientific consensus",
+    "Original SciFact overlap cannot be ruled out unless original dataset files were present",
+    "No confirmatory evaluation is performed"
+  ]
+}

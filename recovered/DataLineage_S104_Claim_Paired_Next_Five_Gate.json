@@ -1,0 +1,21 @@
+{
+  "accepted_identity_doc_ids_in_join": 29,
+  "claims_at_least_one": 47,
+  "claims_at_least_two": 11,
+  "accepted_claim_doc_pairs": 72,
+  "sentence_rows": 216,
+  "claims_at_least_two_ids": [
+    128,
+    830,
+    831,
+    1020,
+    1021,
+    1099,
+    1100,
+    1187,
+    1352,
+    1362,
+    1363
+  ],
+  "caveat": "Bibliographic title-DOI identity only; corpus version and source independence not established."
+}

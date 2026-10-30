@@ -1,0 +1,54 @@
+{
+  "status": "PASS_S15_DESCRIPTIVE_AND_PRESPECIFIED_ABLATIONS",
+  "s14_sha256": "e046ddb3b665f0b09393b650f385a0e8b507a936ff76a08d122f7d6f1681aa50",
+  "calibration_threshold_rule": "highest coverage with calibration risk <= 0.10, minimum 30 accepted, thresholds [0.25,0.50,0.75,0.90,0.95,1.0]; fallback 1.0",
+  "threshold_candidates": [
+    {
+      "threshold": 0.25,
+      "n": 40,
+      "coverage": 0.38095238095238093,
+      "risk": 0.175
+    },
+    {
+      "threshold": 0.5,
+      "n": 46,
+      "coverage": 0.4380952380952381,
+      "risk": 0.15217391304347827
+    },
+    {
+      "threshold": 0.75,
+      "n": 61,
+      "coverage": 0.580952380952381,
+      "risk": 0.16393442622950818
+    },
+    {
+      "threshold": 0.9,
+      "n": 65,
+      "coverage": 0.6190476190476191,
+      "risk": 0.18461538461538463
+    },
+    {
+      "threshold": 0.95,
+      "n": 66,
+      "coverage": 0.6285714285714286,
+      "risk": 0.18181818181818182
+    },
+    {
+      "threshold": 1.0,
+      "n": 105,
+      "coverage": 1.0,
+      "risk": 0.20952380952380953
+    }
+  ],
+  "chosen_threshold": 1.0,
+  "dev_tuning": false,
+  "model_training": false,
+  "bootstrap_unit": "claim_id",
+  "limitations": [
+    "S15 evaluated official development data; not independent test",
+    "No external source reliability ground truth",
+    "Aggregation comparisons use gold evidence sentences",
+    "Threshold selection from only 105 calibration pairs",
+    "Perturbations are synthetic sensitivity analyses, not evidence of real-world source dependence"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "S109",
+  "method": "document-level arithmetic mean of three frozen sentence probability vectors; accepted-document mean versus top retrieved document",
+  "n_sentence_rows": 4500,
+  "n_claims": 300,
+  "accepted_bibliographic_ids": 35,
+  "claims_with_2plus_accepted": 16,
+  "accepted_stance_disagreement_claims": 5,
+  "accepted_mean_differs_top_retrieved": 1,
+  "accepted_mean_differs_top_accepted": 0,
+  "not_measured": [
+    "accuracy",
+    "macro F1",
+    "causal provenance effect",
+    "publication independence",
+    "external generalization"
+  ],
+  "limitations": [
+    "selection on verified documents",
+    "small diagnostic subset",
+    "no label-based assessment",
+    "corpus versions unverified"
+  ]
+}

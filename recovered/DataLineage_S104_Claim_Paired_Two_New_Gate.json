@@ -1,0 +1,27 @@
+{
+  "accepted_publication_identities": 31,
+  "claims_with_at_least_one": 47,
+  "claims_with_two_or_more": 13,
+  "accepted_claim_document_pairs": 76,
+  "sentence_rows": 228,
+  "multi_document_claim_ids": [
+    128,
+    237,
+    684,
+    830,
+    831,
+    1020,
+    1021,
+    1099,
+    1100,
+    1187,
+    1352,
+    1362,
+    1363
+  ],
+  "newly_checked_doc_ids": [
+    "2665425",
+    "4942718"
+  ],
+  "publication_version_and_source_independence": "NOT_VERIFIED"
+}

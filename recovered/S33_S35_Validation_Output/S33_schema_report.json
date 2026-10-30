@@ -1,0 +1,49 @@
+{
+  "source": "D:\\DataLineage\\S32_FEVER_Resolved\\S32_resolved_evidence.csv",
+  "columns": [
+    "split",
+    "claim_id",
+    "claim",
+    "gold_label",
+    "group_index",
+    "page_id",
+    "sentence_index",
+    "resolved",
+    "evidence_text"
+  ],
+  "first_three_rows": [
+    {
+      "split": "dev",
+      "claim_id": "137334",
+      "claim": "Fox 2000 Pictures released the film Soul Food.",
+      "gold_label": "SUPPORTS",
+      "group_index": "0",
+      "page_id": "Soul_Food_-LRB-film-RRB-",
+      "sentence_index": "0",
+      "resolved": "1",
+      "evidence_text": "Soul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures ."
+    },
+    {
+      "split": "dev",
+      "claim_id": "137334",
+      "claim": "Fox 2000 Pictures released the film Soul Food.",
+      "gold_label": "SUPPORTS",
+      "group_index": "1",
+      "page_id": "Soul_Food_-LRB-film-RRB-",
+      "sentence_index": "0",
+      "resolved": "1",
+      "evidence_text": "Soul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures ."
+    },
+    {
+      "split": "dev",
+      "claim_id": "137334",
+      "claim": "Fox 2000 Pictures released the film Soul Food.",
+      "gold_label": "SUPPORTS",
+      "group_index": "2",
+      "page_id": "Soul_Food_-LRB-film-RRB-",
+      "sentence_index": "0",
+      "resolved": "1",
+      "evidence_text": "Soul Food is a 1997 American comedy-drama film produced by Kenneth `` Babyface '' Edmonds , Tracey Edmonds and Robert Teitel and released by Fox 2000 Pictures ."
+    }
+  ]
+}

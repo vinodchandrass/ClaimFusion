@@ -1,0 +1,21 @@
+{
+  "status": "PASS_STRUCTURAL_AUDIT_HUMAN_EXPOSURE_ATTESTATION_REQUIRED",
+  "s18_archive_sha256": "3232dd14010e773b32faff9b3b9b0baf025454108facb42eaab13200ec26ce79",
+  "s19_archive_sha256": "75e0f2c9c46c8f0b90b1942e778aa5f9ed65ebc4de1a2d820e4ffbc70e3dbf26",
+  "counts": {
+    "claims": 279,
+    "evidence_pairs": 460,
+    "opposing_label_claims": 15,
+    "train_text_overlaps": 1,
+    "dev_text_overlaps": 0,
+    "test_text_overlaps": 279,
+    "citation_pairs": 209,
+    "pooling_pairs": 251
+  },
+  "cannot_establish": [
+    "Whether SciFact-Open labels or conflict identities were consulted during prior method selection",
+    "Whether pretrained NLI weights encountered original SciFact test claims",
+    "True document source dependence, scientific consensus or evidence source reliability",
+    "An untouched confirmatory evaluation set"
+  ]
+}

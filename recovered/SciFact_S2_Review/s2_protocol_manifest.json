@@ -1,0 +1,76 @@
+{
+  "stage": "S2 protocol preparation ONLY; no model evaluation",
+  "source_sha256": {
+    "claims_train.jsonl": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+    "claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "claims_test.jsonl": "558930d75215c73f84a28fe538307d6d397c9de1ec7239514cf45f80d75d2ca3",
+    "corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62",
+    "cross_validation\\fold_1\\claims_train_1.jsonl": "32922d3690b6e867589ed9c672c00115eea7295845c91d13747ef07fa6fb3996",
+    "cross_validation\\fold_1\\claims_dev_1.jsonl": "e30aaab11fbc94580514c83fe3778b76cac0b1b981f3fe941d7b4a33005e5653",
+    "cross_validation\\fold_2\\claims_train_2.jsonl": "6d8ad6881a7d50cd05aad1baf62d68d68ae3168fe5e3049549bc430ffd7f09a3",
+    "cross_validation\\fold_2\\claims_dev_2.jsonl": "1db8e51cfa04f680ce6d256096ffe336ee74f1640f836e4d2bc0c711fb312f03",
+    "cross_validation\\fold_3\\claims_train_3.jsonl": "8b16b208d9b42cbf882d480531090b23025689077f78aee60b6434a73c8b3d8b",
+    "cross_validation\\fold_3\\claims_dev_3.jsonl": "25f3b19510216350db45cfd469a7d8c6131f948c7ce70976f01d6126682ee745",
+    "cross_validation\\fold_4\\claims_train_4.jsonl": "11444b9365c72eb6b497dc1a068ad11fa691e5c94cab2249b8969430704f0608",
+    "cross_validation\\fold_4\\claims_dev_4.jsonl": "f6c91c02854739b476b145160c47beb9a123607da58b33b7ea240e0d51209142",
+    "cross_validation\\fold_5\\claims_train_5.jsonl": "859ac5af4b2703d8feab737315b0d12c59d7cbc4c4265852a2c3f9dc93ef1177",
+    "cross_validation\\fold_5\\claims_dev_5.jsonl": "a210668e95a02d8b2b67f2592db517476e22d6175309e5d643f2bf01eed5c97b"
+  },
+  "counts": {
+    "train": 809,
+    "dev": 300,
+    "test_unlabeled": 300,
+    "corpus": 5183,
+    "candidates_by_status": {
+      "UNANNOTATED_CITED_PAIR": 486,
+      "GOLD_EVIDENCE": 1295
+    }
+  },
+  "official_dev_training_retained": 807,
+  "test_training_retained": 808,
+  "folds": [
+    {
+      "fold": 1,
+      "train_original": 887,
+      "train_after_exact_text_exclusion": 884,
+      "dev": 222,
+      "excluded": 3
+    },
+    {
+      "fold": 2,
+      "train_original": 887,
+      "train_after_exact_text_exclusion": 886,
+      "dev": 222,
+      "excluded": 1
+    },
+    {
+      "fold": 3,
+      "train_original": 887,
+      "train_after_exact_text_exclusion": 886,
+      "dev": 222,
+      "excluded": 1
+    },
+    {
+      "fold": 4,
+      "train_original": 887,
+      "train_after_exact_text_exclusion": 886,
+      "dev": 222,
+      "excluded": 1
+    },
+    {
+      "fold": 5,
+      "train_original": 888,
+      "train_after_exact_text_exclusion": 886,
+      "dev": 221,
+      "excluded": 2
+    }
+  ],
+  "errors": [],
+  "restrictions": [
+    "UNKNOWN is NOT a gold NEI label",
+    "Cited documents are not exhaustive negative labels",
+    "Official test lacks gold labels",
+    "Cross-validation folds are alternative partitions, not independent replications",
+    "No model training or statistical superiority claim was produced"
+  ]
+}

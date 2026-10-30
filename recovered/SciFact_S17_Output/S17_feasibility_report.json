@@ -1,0 +1,35 @@
+{
+  "status": "PASS_INTEGRITY_INSUFFICIENT_DEV_MULTI_DOC_SUPPORT",
+  "dataset_sha256": {
+    "claims_train.jsonl": "f4c8fa82d8bd0653a9cc8d61a6ea48c25eacea64e90af5dbf390ebb1b74372f0",
+    "claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62"
+  },
+  "s14_model_commit": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "summary": {
+    "train": {
+      "claims": 809,
+      "multi_document_claims": 37,
+      "opposing_label_claims": 0,
+      "annotated_document_pairs": 564,
+      "claims_with_no_annotated_documents": 304
+    },
+    "dev_evaluation": {
+      "claims": 300,
+      "multi_document_claims": 10,
+      "opposing_label_claims": 0,
+      "annotated_document_pairs": 209,
+      "claims_with_no_annotated_documents": 112
+    }
+  },
+  "annotation_anomalies": 0,
+  "dev_s14_pair_key_symmetric_difference": 0,
+  "dev_s14_pair_key_difference_examples": [],
+  "limitations": [
+    "Only annotated evidence document pairs are included",
+    "No verified source reliability or document dependence labels",
+    "Unlabeled SciFact test data cannot support supervised confirmatory metrics",
+    "Official development set has already been used for model exploration",
+    "Multi-document evaluation requires sufficient opposing and concordant labeled claims"
+  ]
+}

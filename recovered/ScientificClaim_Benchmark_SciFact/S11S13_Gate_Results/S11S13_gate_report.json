@@ -1,0 +1,18 @@
+{
+  "phase": "S11-S13_INPUT_GATE",
+  "status": "PASS_INPUT_AUDIT_ONLY",
+  "evaluation_pairs": 209,
+  "distinct_claims": 188,
+  "error_count": 39,
+  "high_neutral_ge_0_75_count": 84,
+  "high_neutral_error_count": 25,
+  "errors": [],
+  "calibration_status": "MISSING",
+  "calibration_pairs": 0,
+  "sentence_probabilities_status": "MISSING",
+  "s11_threshold_freeze": "BLOCKED: requires verified training-only calibration with claim-disjoint partition and precommitted objective",
+  "s12_aggregation": "BLOCKED: S7 provides aggregated pair probabilities only; no sentence-level probabilities",
+  "s13_perturbation": "BLOCKED: requires frozen perturbation protocol and sentence-level outputs; no simulated reliability labels permitted",
+  "data_restriction": "Official dev gold labels used only for audit; no threshold/model selection",
+  "source_sha256": "2e456b81a8c665a92707b667e1f667323718f3b20b2d58f35f4d041ef04c3369"
+}

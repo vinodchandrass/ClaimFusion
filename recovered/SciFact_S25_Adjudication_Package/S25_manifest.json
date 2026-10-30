@@ -1,0 +1,18 @@
+{
+  "status": "DESIGN_ONLY_AWAITING_HUMAN_ADJUDICATION",
+  "n_claims": 15,
+  "n_documents": 82,
+  "n_document_pairs": 402,
+  "source_s18_sha256": "3232dd14010e773b32faff9b3b9b0baf025454108facb42eaab13200ec26ce79",
+  "source_s23_sha256": "2c6c530e834c1d1d9a79c88fe75c5d5ec2165e83e38ebf0818fcf378c919e233",
+  "files_sha256": {
+    "BLINDED_evidence_packets.csv": "af7355fdf468437c1bcd0d63ec41bccfe403fbc85dd7869b0c5525a4ded95614",
+    "BLINDED_claim_review_forms.csv": "c691324bec4d2a918e4c9cffdff57c9a00f28fb460f6d3058a798564a4551a33",
+    "S25_GATE_AND_NEXT_ACTIONS.md": "19c36a3e1879d09a942c9de35b70364cf344a5a761cf3e08e8c3d54142447640",
+    "BLINDED_document_review_forms.csv": "5dd7d5a2928b049ce7296f6c0afa93237abeed2319b32c5db5385b2917ab6eda",
+    "BLINDED_dependence_pairs.csv": "ef3c53ace8ccca95763a6e8fd0a8f8dbe714900a618cbbc0a8dfac7366a37c24",
+    "README.md": "d78bc403d11a046e434defc8e150a06190ab1bade8a9243165c4235d369532b3",
+    "RESTRICTED_case_crosswalk.csv": "b32e74f4d9d813065a359363e7aba2e8f3be152885252cc4a0e04c4202f413dc",
+    "ADJUDICATION_RUBRIC.md": "d519e69c3df60d3b2d584a680d6e5d701b4ca115398eb3097bfb32c8de59f295"
+  }
+}

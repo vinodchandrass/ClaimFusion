@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "retrieval_rows": 1500,
+  "candidate_rows": 4500,
+  "mismatches": [],
+  "input_sha256": {
+    "D:\\DataLineage\\ScientificClaim_Benchmark_SciFact\\data\\data\\claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "D:\\DataLineage\\ScientificClaim_Benchmark_SciFact\\data\\data\\corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62",
+    "D:\\DataLineage\\S42_S44_SciFact_Dev_Output\\s42_dev_retrieval.csv": "23abb36262d21f8149d7c08eca6c8588d3747ccfeb2da5ed15d81f4aee4d33ec",
+    "D:\\DataLineage\\S46_S48_Dev_NonOracle_Output\\s46_sentence_candidates.csv": "b6724c628aebf5b112fe3c8ca74fb59eddfad1b0e1f899eaf9b300190a8dc41d"
+  }
+}

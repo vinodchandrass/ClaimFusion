@@ -1,0 +1,22 @@
+{
+  "accepted_unique_publication_identities": 19,
+  "claims_with_accepted_document": 42,
+  "claims_with_two_accepted_documents": 0,
+  "claims_with_accepted_and_pending_exact_candidate": 42,
+  "unique_unverified_documents_on_accepted_claims": 143,
+  "unique_exact_title_candidates_on_accepted_claims": 104,
+  "claim_paired_priority_queue_rows": 143,
+  "top10_candidate_ids": [
+    8290953,
+    12885341,
+    23513718,
+    34287602,
+    52873726,
+    735130,
+    9433958,
+    12631182,
+    21557614,
+    22420524
+  ],
+  "note": "Prospective verification priority only; no new identities authenticated, no new fusion results."
+}

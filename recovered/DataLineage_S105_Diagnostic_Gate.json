@@ -1,0 +1,9 @@
+{
+  "accepted_doc_ids": 25,
+  "accepted_retrieval_pairs": 51,
+  "claims_with_accepted_docs": 30,
+  "claims_with_two_or_more": 13,
+  "claims_with_stance_disagreement": 1,
+  "provenance_identity_only": true,
+  "independent_validation": false
+}

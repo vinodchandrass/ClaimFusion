@@ -1,0 +1,104 @@
+{
+  "stage": "S112",
+  "source": "crossdomain_fusion_report_DEV_ONLY.json",
+  "n": 188,
+  "rows": [
+    {
+      "model": "frozen",
+      "policy": "top_document",
+      "n": 188,
+      "correct": 125,
+      "accuracy": 0.6648936170212766,
+      "supports_correct": 65,
+      "supports_n": 124,
+      "refutes_correct": 60,
+      "refutes_n": 64
+    },
+    {
+      "model": "frozen",
+      "policy": "five_doc_mean",
+      "n": 188,
+      "correct": 101,
+      "accuracy": 0.5372340425531915,
+      "supports_correct": 37,
+      "supports_n": 124,
+      "refutes_correct": 64,
+      "refutes_n": 64
+    },
+    {
+      "model": "frozen",
+      "policy": "rank_discounted",
+      "n": 188,
+      "correct": 100,
+      "accuracy": 0.5319148936170213,
+      "supports_correct": 37,
+      "supports_n": 124,
+      "refutes_correct": 63,
+      "refutes_n": 64
+    },
+    {
+      "model": "frozen",
+      "policy": "majority",
+      "n": 188,
+      "correct": 84,
+      "accuracy": 0.44680851063829785,
+      "supports_correct": 21,
+      "supports_n": 124,
+      "refutes_correct": 63,
+      "refutes_n": 64
+    },
+    {
+      "model": "adapted",
+      "policy": "top_document",
+      "n": 188,
+      "correct": 149,
+      "accuracy": 0.7925531914893617,
+      "supports_correct": 107,
+      "supports_n": 124,
+      "refutes_correct": 42,
+      "refutes_n": 64
+    },
+    {
+      "model": "adapted",
+      "policy": "five_doc_mean",
+      "n": 188,
+      "correct": 139,
+      "accuracy": 0.7393617021276596,
+      "supports_correct": 97,
+      "supports_n": 124,
+      "refutes_correct": 42,
+      "refutes_n": 64
+    },
+    {
+      "model": "adapted",
+      "policy": "rank_discounted",
+      "n": 188,
+      "correct": 139,
+      "accuracy": 0.7393617021276596,
+      "supports_correct": 97,
+      "supports_n": 124,
+      "refutes_correct": 42,
+      "refutes_n": 64
+    },
+    {
+      "model": "adapted",
+      "policy": "majority",
+      "n": 188,
+      "correct": 130,
+      "accuracy": 0.6914893617021277,
+      "supports_correct": 96,
+      "supports_n": 124,
+      "refutes_correct": 34,
+      "refutes_n": 64
+    }
+  ],
+  "adapted_top_vs_five_doc_accuracy_delta": -0.05319148936170204,
+  "adapted_top_vs_five_doc_correct_delta": -10,
+  "paired_testing": "NOT RECOMPUTED: per-claim adapted predictions unavailable in inspected sources",
+  "source_correction": "Consolidated_Fusion_Results/claim_predictions_DEV_ONLY.csv is frozen baseline, not adapted; initial S112 files labeled Adapted are invalid for adapted conclusions",
+  "limitations": [
+    "Dev only",
+    "Frozen vs adapted max length differs",
+    "No independent labelled holdout"
+  ]
+}

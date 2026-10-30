@@ -1,0 +1,56 @@
+{
+  "status": "EXPLORATORY_DEV_FACTORIAL_AUDIT",
+  "n": 6616,
+  "source_sha256": "ef54b33e0fd0ef9c0420f49016c1efb458d3f8e9076f8b28d4dd4c45caa5e988",
+  "cache_sha256": "101e802bc8dd8dc21ba8b6e710845b02618aa6a665d8fc7725864f4d08096e60",
+  "diagnostics_sha256": "b52471bc669acaba0e7d3fd350e6aa4a0f19dc8067c794fdbe20a48f42c8102e",
+  "methods": {
+    "max_pair_all": {
+      "accuracy": 0.7661729141475212,
+      "abstention": 0.17805320435308344
+    },
+    "max_pair_complete_only": {
+      "accuracy": 0.7651148730350665,
+      "abstention": 0.17926239419588874
+    },
+    "conjunctive_all_groups": {
+      "accuracy": 0.7453143893591294,
+      "abstention": 0.19740024183796856
+    },
+    "conjunctive_complete_only": {
+      "accuracy": 0.7442563482466747,
+      "abstention": 0.19860943168077388
+    }
+  },
+  "comparisons": {
+    "max_pair_all__vs__max_pair_complete_only": {
+      "changed": 8,
+      "changed_with_incomplete_flag": 8,
+      "a_correct_b_wrong": 7,
+      "a_wrong_b_correct": 0
+    },
+    "conjunctive_all_groups__vs__conjunctive_complete_only": {
+      "changed": 8,
+      "changed_with_incomplete_flag": 8,
+      "a_correct_b_wrong": 7,
+      "a_wrong_b_correct": 0
+    },
+    "max_pair_all__vs__conjunctive_all_groups": {
+      "changed": 143,
+      "changed_with_incomplete_flag": 0,
+      "a_correct_b_wrong": 139,
+      "a_wrong_b_correct": 1
+    },
+    "max_pair_complete_only__vs__conjunctive_complete_only": {
+      "changed": 143,
+      "changed_with_incomplete_flag": 0,
+      "a_correct_b_wrong": 139,
+      "a_wrong_b_correct": 1
+    }
+  },
+  "limitations": [
+    "Oracle FEVER annotations are not independent provenance",
+    "No gold NEI cases, retrieval evaluation, or independent SciFact confirmation",
+    "No model inference performed; frozen pair cache reused"
+  ]
+}

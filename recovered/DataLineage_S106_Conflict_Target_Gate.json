@@ -1,0 +1,20 @@
+{
+  "n_claims": 300,
+  "n_accepted_doc_ids": 28,
+  "claims_two_plus_accepted": 13,
+  "claims_disagreement_all_retrieved": 132,
+  "claims_disagreement_accepted": 1,
+  "priority_claim_counts": {
+    "D_NO_CONFLICT": 168,
+    "C_CONFLICT_NO_ACCEPTED": 117,
+    "A_CONFLICT_AND_ONE_ACCEPTED": 10,
+    "B_CONFLICT_AND_TWO_ACCEPTED": 5
+  },
+  "pending_claim_doc_pairs": 1430,
+  "notes": [
+    "All-document disagreement is a frozen-model prediction diagnostic, not gold-label contradiction",
+    "Accepted means bibliographic identity only; publication version and source independence unverified",
+    "Previously issued S104 sentence join contains only pilot verification decisions; other acceptances merged from separate batch files",
+    "No model training or evaluation performed"
+  ]
+}

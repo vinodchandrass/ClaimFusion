@@ -1,0 +1,3 @@
+doc_id,doi,source,decision,corpus_text_version,source_independence,retrieval_pairs,claim_ids
+2665425,10.1016/j.cub.2013.07.083,https://pubmed.ncbi.nlm.nih.gov/24076245/,ACCEPT_BIBLIOGRAPHIC_IDENTITY,NOT_VERIFIED,NOT_VERIFIED,2,"128,1362"
+4942718,10.1371/journal.pbio.1002341,https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002341,ACCEPT_BIBLIOGRAPHIC_IDENTITY,NOT_VERIFIED,NOT_VERIFIED,2,"237,684"

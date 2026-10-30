@@ -1,0 +1,29 @@
+{
+  "source_sha256": "9d4974209ffc872566111ce7ed2fbd422245c3dba2a5ec30de61af38f061c7e3",
+  "pairs_sha256": "9212d5941170a631415116a748672ffcdce6f7f9f3c7ca411d386a74930a132a",
+  "records": 4086,
+  "pairs": 10389,
+  "max_length": 192,
+  "premise": "evidence",
+  "hypothesis": "claim",
+  "mode": "full",
+  "models": {
+    "frozen": {
+      "output_sha256": "c091724958740fd036c100a7a5fee42ace9162dfd617e51ebda7bbc9ad9df6b2",
+      "weights_sha256": "d8148c6d49e0a7925134294c56326c71fe0ab1dc390e37355e00c7efbb488afa"
+    },
+    "weighted": {
+      "output_sha256": "18bc4ce5c7ebe3c11239ac37369177965042e82a39020905915c7ebd876ea01f",
+      "weights_sha256": "526385242bdae3043d7462d9cfb848641c96fde196dea846fb678973532cf652"
+    }
+  },
+  "files": {
+    "evaluation_summary.csv": "9fa77082c6d13b277cc14a9f8e04220d33b7c064a1792170bca51352d6899866",
+    "evidence_counts.csv": "0606159da73ddfe85c2843fffcfe2e015040b6967ac2abdb4c8c1d6033f48015",
+    "frozen_evidence_probabilities.csv": "c091724958740fd036c100a7a5fee42ace9162dfd617e51ebda7bbc9ad9df6b2",
+    "paired_cluster_bootstrap.csv": "52207e00f8acc1dbe7b61fe9db7b22269305c64b8c6e31f3b598c0da19e9816d",
+    "record_predictions.csv": "a78970cd82a66a8c2d698823944f4b76a633586b91524153d023b12f1db4d7e6",
+    "unique_claim_sensitivity.csv": "9dc38401c9332b8305565dff69f25d6db7d88ce9e4cd9ef9e78ecd51df466fba",
+    "weighted_evidence_probabilities.csv": "18bc4ce5c7ebe3c11239ac37369177965042e82a39020905915c7ebd876ea01f"
+  }
+}
